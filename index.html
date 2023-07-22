@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Website</title>
+  <!-- Other head elements -->
+  <meta name="apple-itunes-app" content="app-id=89NBZQ7723, app-argument=rahimiaapp://qa.rahimia.org/">
+
+  <!-- Start SmartBanner configuration -->
+  <meta name="smartbanner:title" content="Rahimia">
+  <meta name="smartbanner:author" content="Rahimia">
+  <meta name="smartbanner:price" content="FREE">
+  <meta name="smartbanner:price-suffix-apple" content=" - On the App Store">
+  <meta name="smartbanner:price-suffix-google" content=" - In Google Play">
+  <meta name="smartbanner:icon-apple" content="https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/13/87/81/13878187-ac3c-060d-e3f2-3f03d6c29658/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp">
+  <meta name="smartbanner:icon-google" content="https://play-lh.googleusercontent.com/kSEr7F8Opkl0yx50IqOXzG2LanBizRCOmI1BXeuP19Vwz8x3wKgaYYCuV6cG8bIQk9s=w480-h960-rw">
+  <meta name="smartbanner:button" content="VIEW">
+  <meta name="smartbanner:button-url-apple" content="https://apps.apple.com/pk/app/rahimia-official/id1607136682">
+  <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=org.rahimia.app">
+  <meta name="smartbanner:enabled-platforms" content="android,ios">
+  <meta name="smartbanner:close-label" content="Close">
+  <!-- End SmartBanner configuration -->
+
+  <meta name="smartbanner:exclude-user-agent-regex" content="^.*(Version).*Safari">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.19.3/smartbanner.min.css">
+</head>
+<body>
+  <!-- Your website content -->
+  welcome to rahimia
+
+  <button onclick="openAppOrStore()">Open App</button>
+
+  <!-- Smart App Banner -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smartbanner.js/1.19.3/smartbanner.min.js"></script>
+  <script>
+    function openAppOrStore() {
+      window.location.href = 'rahimiaapp://qa.rahimia.org/'; // Replace 'myapp' with your app's custom URL scheme
+
+      setTimeout(function() {
+        // window.location.href = 'https://play.google.com/store/apps/details?id=org.rahimia.app'; // Replace with your app's Play Store URL
+        window.location.href = 'https://apps.apple.com/pk/app/rahimia-official/id1607136682'; // Replace with your app's Play Store URL
+      }, 1000); // Timeout to redirect to Play Store if the app is not installed
+    }
+  </script>
+</body>
+</html>

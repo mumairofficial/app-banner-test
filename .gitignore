@@ -1,0 +1,5 @@
+webapp/.well-known
+Dockerfile
+docker-compose.yml
+nginx.conf
+webapp/
